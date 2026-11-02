@@ -28,7 +28,7 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 | --- | --- | --- |
 | [WorkTaskTracker-1.6.9-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-portable-win-x64.zip) | **建議下載**。解壓後含 EXE、使用手冊與收款碼圖片，共 21 個檔案 | 69,478,212 bytes |
 | [WorkTaskTracker.exe](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker.exe) | 單一自包含程式本體（不含手冊與收款碼圖片） | 162,277,282 bytes |
-| [使用手冊.html](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-manual-zh-tw.html) | 完整使用說明（也可在本儲存庫直接開啟） | 1,696,304 bytes |
+| [WorkTaskTracker-1.6.9-manual-zh-tw.html](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-manual-zh-tw.html) | 完整使用手冊（繁體中文；也可在本儲存庫直接開啟） | 1,696,304 bytes |
 
 最省事的方式：下載 ZIP → 解壓到任意資料夾 → 雙擊 `WorkTaskTracker.exe`。程式資料與程式資料夾分開，換版或搬移程式都不影響任務資料。
 
@@ -41,7 +41,7 @@ WorkTaskTracker-1.6.9-portable-win-x64.zip
 WorkTaskTracker.exe
 4BD2657CF8D1E72C1EB107EDFA50BEDFDBF9CF0E4343BBA44C0743392334A1C9
 
-使用手冊.html
+WorkTaskTracker-1.6.9-manual-zh-tw.html
 258ACFF950E08763C095D89265822BCFEB3A50EC49EB32606C47382DFC816F21
 ```
 
@@ -108,7 +108,7 @@ Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一�
 | --- | --- | --- |
 | [WorkTaskTracker-1.6.9-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-portable-win-x64.zip) | **推荐下载**。解压后含 EXE、使用手册与收款码图片，共 21 个文件 | 69,478,212 bytes |
 | [WorkTaskTracker.exe](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker.exe) | 单一自包含程序本体（不含手册与收款码图片） | 162,277,282 bytes |
-| [使用手冊.html](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-manual-zh-tw.html) | 完整使用说明（繁体中文，也可在本仓库直接打开） | 1,696,304 bytes |
+| [WorkTaskTracker-1.6.9-manual-zh-tw.html](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-manual-zh-tw.html) | 完整使用手册（繁体中文，也可在本仓库直接打开） | 1,696,304 bytes |
 
 最省事的方式：下载 ZIP → 解压到任意文件夹 → 双击 `WorkTaskTracker.exe`。程序数据与程序文件夹分开，换版本或搬移程序都不影响任务数据。
 
@@ -121,7 +121,7 @@ WorkTaskTracker-1.6.9-portable-win-x64.zip
 WorkTaskTracker.exe
 4BD2657CF8D1E72C1EB107EDFA50BEDFDBF9CF0E4343BBA44C0743392334A1C9
 
-使用手冊.html
+WorkTaskTracker-1.6.9-manual-zh-tw.html
 258ACFF950E08763C095D89265822BCFEB3A50EC49EB32606C47382DFC816F21
 ```
 
