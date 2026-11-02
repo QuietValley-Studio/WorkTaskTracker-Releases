@@ -22,17 +22,17 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 
 **點這裡直接下載：<https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest>**
 
-（打開後在頁面底部 **Assets** 區點檔名即可下載；下面表格的檔名也都是直接下載連結。）
+（打開後在頁面底部 **Assets** 區點檔名即可下載；下面表格的檔名也是直接下載連結。）
 
 | 檔案 | 說明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.9-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-portable-win-x64.zip) | **建議下載**。解壓後含 EXE、使用手冊與收款碼圖片，共 21 個檔案 | 69,478,212 bytes |
-| [WorkTaskTracker.exe](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker.exe) | 單一自包含程式本體（不含手冊與收款碼圖片） | 162,277,282 bytes |
-| [WorkTaskTracker-1.6.9-manual-zh-tw.html](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-manual-zh-tw.html) | 完整使用手冊（繁體中文；也可在本儲存庫直接開啟） | 1,696,304 bytes |
+| [WorkTaskTracker-1.6.9-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後含 EXE、使用手冊與收款碼圖片，共 21 個檔案 | 69,478,212 bytes |
 
-最省事的方式：下載 ZIP → 解壓到任意資料夾 → 雙擊 `WorkTaskTracker.exe`。程式資料與程式資料夾分開，換版或搬移程式都不影響任務資料。
+下載 ZIP → 解壓到任意資料夾 → 雙擊 `WorkTaskTracker.exe` 即可。程式資料與程式資料夾分開，換版或搬移程式都不影響任務資料。
 
 ### 校驗碼（SHA-256）
+
+第一組是 ZIP 壓縮檔本身的校驗碼；後兩組是解壓後資料夾內 `WorkTaskTracker.exe` 與 `使用手冊.html` 的校驗碼，可用來確認解壓結果完整。
 
 ```text
 WorkTaskTracker-1.6.9-portable-win-x64.zip
@@ -41,7 +41,7 @@ WorkTaskTracker-1.6.9-portable-win-x64.zip
 WorkTaskTracker.exe
 4BD2657CF8D1E72C1EB107EDFA50BEDFDBF9CF0E4343BBA44C0743392334A1C9
 
-WorkTaskTracker-1.6.9-manual-zh-tw.html
+使用手冊.html
 258ACFF950E08763C095D89265822BCFEB3A50EC49EB32606C47382DFC816F21
 ```
 
@@ -102,17 +102,17 @@ Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一�
 
 **点这里直接下载：<https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest>**
 
-（打开后在页面底部 **Assets** 区点文件名即可下载；下面表格的文件名也都是直接下载链接。）
+（打开后在页面底部 **Assets** 区点文件名即可下载；下面表格的文件名也是直接下载链接。）
 
 | 文件 | 说明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.9-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-portable-win-x64.zip) | **推荐下载**。解压后含 EXE、使用手册与收款码图片，共 21 个文件 | 69,478,212 bytes |
-| [WorkTaskTracker.exe](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker.exe) | 单一自包含程序本体（不含手册与收款码图片） | 162,277,282 bytes |
-| [WorkTaskTracker-1.6.9-manual-zh-tw.html](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-manual-zh-tw.html) | 完整使用手册（繁体中文，也可在本仓库直接打开） | 1,696,304 bytes |
+| [WorkTaskTracker-1.6.9-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-portable-win-x64.zip) | **唯一需要下载的文件**。解压后含 EXE、使用手册与收款码图片，共 21 个文件 | 69,478,212 bytes |
 
-最省事的方式：下载 ZIP → 解压到任意文件夹 → 双击 `WorkTaskTracker.exe`。程序数据与程序文件夹分开，换版本或搬移程序都不影响任务数据。
+下载 ZIP → 解压到任意文件夹 → 双击 `WorkTaskTracker.exe` 即可。程序数据与程序文件夹分开，换版本或搬移程序都不影响任务数据。
 
 ### 校验码（SHA-256）
+
+第一组是 ZIP 压缩包本身的校验码；后两组是解压后文件夹内 `WorkTaskTracker.exe` 与 `使用手冊.html` 的校验码，可用来确认解压结果完整。
 
 ```text
 WorkTaskTracker-1.6.9-portable-win-x64.zip
@@ -121,7 +121,7 @@ WorkTaskTracker-1.6.9-portable-win-x64.zip
 WorkTaskTracker.exe
 4BD2657CF8D1E72C1EB107EDFA50BEDFDBF9CF0E4343BBA44C0743392334A1C9
 
-WorkTaskTracker-1.6.9-manual-zh-tw.html
+使用手冊.html
 258ACFF950E08763C095D89265822BCFEB3A50EC49EB32606C47382DFC816F21
 ```
 
@@ -182,17 +182,17 @@ A Windows desktop task / to-do tracker, available **as a portable build only**: 
 
 **Direct download: <https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest>**
 
-(Open the link and pick a file under **Assets** at the bottom of the page; the file names in the table below are also direct download links.)
+(Open the link and pick the file under **Assets** at the bottom of the page; the file name in the table below is also a direct download link.)
 
 | File | Description | Size |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.9-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-portable-win-x64.zip) | **Recommended.** Contains the EXE, user manual and QR-code images (21 files) | 69,478,212 bytes |
-| [WorkTaskTracker.exe](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker.exe) | The single self-contained program (manual and QR images not included) | 162,277,282 bytes |
-| [WorkTaskTracker-1.6.9-manual-zh-tw.html](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-manual-zh-tw.html) | Full user manual (Traditional Chinese; also viewable in this repository) | 1,696,304 bytes |
+| [WorkTaskTracker-1.6.9-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-portable-win-x64.zip) | **The only file you need.** Contains the EXE, user manual and QR-code images (21 files) | 69,478,212 bytes |
 
-Quickest way: download the ZIP → extract to any folder → double-click `WorkTaskTracker.exe`. Task data lives outside the program folder, so upgrading or moving the program never touches your tasks.
+Download the ZIP → extract to any folder → double-click `WorkTaskTracker.exe`. Task data lives outside the program folder, so upgrading or moving the program never touches your tasks.
 
 ### Checksums (SHA-256)
+
+The first hash is for the ZIP file itself; the other two are for `WorkTaskTracker.exe` and `使用手冊.html` inside the extracted folder, so you can verify the extracted files as well.
 
 ```text
 WorkTaskTracker-1.6.9-portable-win-x64.zip
@@ -201,7 +201,7 @@ WorkTaskTracker-1.6.9-portable-win-x64.zip
 WorkTaskTracker.exe
 4BD2657CF8D1E72C1EB107EDFA50BEDFDBF9CF0E4343BBA44C0743392334A1C9
 
-WorkTaskTracker-1.6.9-manual-zh-tw.html (user manual)
+使用手冊.html (user manual)
 258ACFF950E08763C095D89265822BCFEB3A50EC49EB32606C47382DFC816F21
 ```
 
