@@ -1,5 +1,5 @@
 {
-  "version": "1.6.9",
+  "version": "1.6.10",
   "downloadUrl": "https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest",
-  "notes": "1.6.9：白天／夜間主題切換（含依時間自動切換）、友情贊助（本機掃碼）、問題回報、介面縮放修正。"
+  "notes": "1.6.10：收款碼內嵌於程式檔，解壓縮後不再附帶收款碼圖片資料夾；程式資料夾放同名圖片仍可覆蓋內建收款碼。"
 }
