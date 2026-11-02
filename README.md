@@ -10,13 +10,15 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 
 ## 下載
 
-請到 **Releases** 頁面下載：
+**點這裡直接下載：<https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest>**
+
+（打開後在頁面底部 **Assets** 區點檔名即可下載；下面表格的檔名也都是直接下載連結。）
 
 | 檔案 | 說明 | 大小 |
 | --- | --- | --- |
-| `WorkTaskTracker-1.6.9-portable-win-x64.zip` | 建議下載。解壓後含 EXE、使用手冊與收款碼圖片，共 21 個檔案 | 69,477,671 bytes |
-| `WorkTaskTracker.exe` | 單一自包含程式本體（不含手冊與收款碼圖片） | 162,277,282 bytes |
-| `使用手冊.html` | 完整使用說明（也可在本儲存庫直接開啟） | 1,695,891 bytes |
+| [WorkTaskTracker-1.6.9-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-portable-win-x64.zip) | **建議下載**。解壓後含 EXE、使用手冊與收款碼圖片，共 21 個檔案 | 69,478,212 bytes |
+| [WorkTaskTracker.exe](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker.exe) | 單一自包含程式本體（不含手冊與收款碼圖片） | 162,277,282 bytes |
+| [使用手冊.html](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-manual-zh-tw.html) | 完整使用說明（也可在本儲存庫直接開啟） | 1,696,304 bytes |
 
 最省事的方式：下載 ZIP → 解壓到任意資料夾 → 雙擊 `WorkTaskTracker.exe`。程式資料與程式資料夾分開，換版或搬移程式都不影響任務資料。
 
@@ -24,13 +26,13 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 
 ```text
 WorkTaskTracker-1.6.9-portable-win-x64.zip
-ADFA0114D3177B46DC91DA2DC0F7D6BCD2B43D671860011E18DFEE42596EFED3
+20F0C621AA776008E39483F6AAA65D6BC611176329227A389BACBE215AC08A66
 
 WorkTaskTracker.exe
-7D710E122E2F0C23190FBCC5ADB3EAE4BDDDA72B0069016E9DCD1041C60FA898
+4BD2657CF8D1E72C1EB107EDFA50BEDFDBF9CF0E4343BBA44C0743392334A1C9
 
 使用手冊.html
-14ACD1319A615E5590A3E6D15FA563A452A7D8E7EB7BC14F01FE2ED07F19B98E
+258ACFF950E08763C095D89265822BCFEB3A50EC49EB32606C47382DFC816F21
 ```
 
 PowerShell 驗證方式：
@@ -60,7 +62,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 ## 隱私與網路行為
 
 - 沒有 `release-config.json` 時，程式完全不會發出網路請求。
-- 目前版本只設定聯絡信箱 `supportEmail`，未設定更新來源與匿名統計端點，因此更新檢查與使用統計維持停用。
+- 目前版本已設定更新來源（本儲存庫的 `version.json`）：啟動時最多每 24 小時讀取一次版本清單，只下載版本號與下載網址，不自動下載或安裝新版；匿名統計端點未設定，使用統計維持停用。
 - 匿名統計若啟用，每天最多送出一次版本、作業系統、介面語言與隨機安裝 ID，不含任務名稱、備註、檔名、路徑、使用者名稱或電腦名稱。
 - 友情贊助不連網：收款碼只從程式資料夾讀取，不上傳金額、收款碼或付款結果，也不送出贊助事件。
 
