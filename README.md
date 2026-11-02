@@ -1,4 +1,14 @@
-# 工作任務追蹤 WorkTaskTracker
+# 工作任務追蹤 WorkTaskTracker · 工作任务追踪 · Windows Task Tracker
+
+[繁體中文](#繁體中文) ｜ [简体中文](#简体中文) ｜ [English](#english)
+
+**下載 Download 下载：<https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest>**
+
+Windows 桌面待辦／任務追蹤工具（免安裝、離線優先、無帳號系統）／Windows 桌面待办与任务追踪工具（免安装、离线优先、无账号系统）／A portable, offline-first Windows desktop task and to-do tracker (no installation, no account, single EXE).
+
+---
+
+## 繁體中文
 
 Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一自包含 `WorkTaskTracker.exe`，雙擊即可使用，不需要安裝、不需要管理員權限，也不需要另外安裝 .NET Runtime。
 
@@ -8,7 +18,7 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 
 > 這個儲存庫只放**免安裝程式與使用說明**。原始碼為私有，不在這裡公開。
 
-## 下載
+### 下載
 
 **點這裡直接下載：<https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest>**
 
@@ -41,14 +51,14 @@ PowerShell 驗證方式：
 Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 ```
 
-## 第一次啟動
+### 第一次啟動
 
 - 任務資料預設放在 `E:\WorkTaskTrackerData\<Windows使用者名稱>\tasks.json`，避免同一台電腦的不同使用者誤用同一份資料。
 - 若電腦沒有 E 槽，第一次開啟會請你選擇本機資料夾，不會自行更改位置。
 - 實際資料路徑記在 `%LOCALAPPDATA%\WorkTaskTracker\data-directory.txt`；要搬移資料請先結束程式，複製整個資料夾後再修改這個檔案。
 - 不要把資料放在網路磁碟或正在同步的共用資料夾。
 
-## 主要功能
+### 主要功能
 
 - 任務清單（待辦／進行中／已完成）、優先級、進度、期限提醒
 - 專案／分類自訂選項、搜尋、統計卡片
@@ -59,19 +69,179 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 - 友情贊助（完全自願，只掃描本機收款碼，程式不經手付款）
 - 問題回報：顯示 `quiet_valley@yeah.net`，按下後才把 `mailto:` 交給系統郵件程式
 
-## 隱私與網路行為
+### 隱私與網路行為
 
 - 沒有 `release-config.json` 時，程式完全不會發出網路請求。
 - 目前版本已設定更新來源（本儲存庫的 `version.json`）：啟動時最多每 24 小時讀取一次版本清單，只下載版本號與下載網址，不自動下載或安裝新版；匿名統計端點未設定，使用統計維持停用。
 - 匿名統計若啟用，每天最多送出一次版本、作業系統、介面語言與隨機安裝 ID，不含任務名稱、備註、檔名、路徑、使用者名稱或電腦名稱。
 - 友情贊助不連網：收款碼只從程式資料夾讀取，不上傳金額、收款碼或付款結果，也不送出贊助事件。
 
-## 使用條款
+### 使用條款
 
 - 本程式為免費軟體，按「現狀」提供，不提供任何明示或默示擔保；請自行定期匯出備份重要資料。
 - 產物沒有程式碼簽章，Windows SmartScreen 可能提示「未知發行者」；請以上方的 SHA-256 校驗碼確認檔案完整。
 - 贊助完全自願，不構成交易，也不提供任何解鎖、回饋或售後義務。
 
-## 問題與建議
+### 問題與建議
 
 來信：**quiet_valley@yeah.net**（請附上程式版本與 Windows 版本，說明操作步驟與預期結果）。
+
+---
+
+## 简体中文
+
+Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一自包含 `WorkTaskTracker.exe`，双击即可使用，不需要安装、不需要管理员权限，也不需要另外安装 .NET Runtime。
+
+- 当前版本：**1.6.9**（文件版本 1.6.9.0）
+- 系统要求：Windows 10 / Windows 11（x64）
+- 数据：单机 `tasks.json`，没有数据库、没有账号系统、不上传任务内容
+
+> 这个仓库只放**免安装程序与使用说明**。源码为私有，不在这里公开。
+
+### 下载
+
+**点这里直接下载：<https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest>**
+
+（打开后在页面底部 **Assets** 区点文件名即可下载；下面表格的文件名也都是直接下载链接。）
+
+| 文件 | 说明 | 大小 |
+| --- | --- | --- |
+| [WorkTaskTracker-1.6.9-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-portable-win-x64.zip) | **推荐下载**。解压后含 EXE、使用手册与收款码图片，共 21 个文件 | 69,478,212 bytes |
+| [WorkTaskTracker.exe](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker.exe) | 单一自包含程序本体（不含手册与收款码图片） | 162,277,282 bytes |
+| [使用手冊.html](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-manual-zh-tw.html) | 完整使用说明（繁体中文，也可在本仓库直接打开） | 1,696,304 bytes |
+
+最省事的方式：下载 ZIP → 解压到任意文件夹 → 双击 `WorkTaskTracker.exe`。程序数据与程序文件夹分开，换版本或搬移程序都不影响任务数据。
+
+### 校验码（SHA-256）
+
+```text
+WorkTaskTracker-1.6.9-portable-win-x64.zip
+20F0C621AA776008E39483F6AAA65D6BC611176329227A389BACBE215AC08A66
+
+WorkTaskTracker.exe
+4BD2657CF8D1E72C1EB107EDFA50BEDFDBF9CF0E4343BBA44C0743392334A1C9
+
+使用手冊.html
+258ACFF950E08763C095D89265822BCFEB3A50EC49EB32606C47382DFC816F21
+```
+
+PowerShell 验证方式：
+
+```powershell
+Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
+```
+
+### 第一次启动
+
+- 任务数据默认放在 `E:\WorkTaskTrackerData\<Windows用户名>\tasks.json`，避免同一台电脑的不同用户误用同一份数据。
+- 如果电脑没有 E 盘，第一次打开会请你选择本地文件夹，不会自行更改位置。
+- 实际数据路径记录在 `%LOCALAPPDATA%\WorkTaskTracker\data-directory.txt`；要搬移数据请先结束程序，复制整个文件夹后再修改这个文件。
+- 不要把数据放在网络磁盘或正在同步的共享文件夹。
+
+### 主要功能
+
+- 任务清单（待办／进行中／已完成）、优先级、进度、期限提醒
+- 项目／分类自定义选项、搜索、统计卡片
+- 系统托盘常驻与桌面悬浮球，Ctrl+滚轮调整界面缩放（80%～150%）
+- 白天／夜间主题切换，并可按时间自动切换（默认开启）
+- 界面语言切换：繁體中文／简体中文／English
+- 自动备份与还原、清理旧数据、导出 JSON
+- 友情赞助（完全自愿，只扫描本机收款码，程序不经手付款）
+- 问题反馈：显示 `quiet_valley@yeah.net`，按下后才把 `mailto:` 交给系统邮件程序
+
+### 隐私与网络行为
+
+- 没有 `release-config.json` 时，程序完全不会发出网络请求。
+- 当前版本已设置更新来源（本仓库的 `version.json`）：启动时最多每 24 小时读取一次版本清单，只下载版本号与下载网址，不自动下载或安装新版本；匿名统计端点未设置，使用统计保持停用。
+- 匿名统计若启用，每天最多发送一次版本、操作系统、界面语言与随机安装 ID，不含任务名称、备注、文件名、路径、用户名或电脑名称。
+- 友情赞助不联网：收款码只从程序文件夹读取，不上传金额、收款码或付款结果，也不发送赞助事件。
+
+### 使用条款
+
+- 本程序为免费软件，按"现状"提供，不提供任何明示或默示担保；请自行定期导出备份重要数据。
+- 产物没有代码签名，Windows SmartScreen 可能提示"未知发布者"；请以上方的 SHA-256 校验码确认文件完整。
+- 赞助完全自愿，不构成交易，也不提供任何解锁、回馈或售后义务。
+
+### 问题与建议
+
+来信：**quiet_valley@yeah.net**（请附上程序版本与 Windows 版本，说明操作步骤与预期结果）。
+
+---
+
+## English
+
+A Windows desktop task / to-do tracker, available **as a portable build only**: a single self-contained `WorkTaskTracker.exe` — just download and double-click. No installation, no admin rights, no separate .NET Runtime needed.
+
+- Current version: **1.6.9** (file version 1.6.9.0)
+- Requirements: Windows 10 / Windows 11 (x64)
+- Data: local `tasks.json` only — no database, no accounts, task content never leaves your machine
+
+> This repository hosts **the portable program and its user manual** only. The source code is private and not published here.
+
+### Download
+
+**Direct download: <https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest>**
+
+(Open the link and pick a file under **Assets** at the bottom of the page; the file names in the table below are also direct download links.)
+
+| File | Description | Size |
+| --- | --- | --- |
+| [WorkTaskTracker-1.6.9-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-portable-win-x64.zip) | **Recommended.** Contains the EXE, user manual and QR-code images (21 files) | 69,478,212 bytes |
+| [WorkTaskTracker.exe](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker.exe) | The single self-contained program (manual and QR images not included) | 162,277,282 bytes |
+| [WorkTaskTracker-1.6.9-manual-zh-tw.html](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.9/WorkTaskTracker-1.6.9-manual-zh-tw.html) | Full user manual (Traditional Chinese; also viewable in this repository) | 1,696,304 bytes |
+
+Quickest way: download the ZIP → extract to any folder → double-click `WorkTaskTracker.exe`. Task data lives outside the program folder, so upgrading or moving the program never touches your tasks.
+
+### Checksums (SHA-256)
+
+```text
+WorkTaskTracker-1.6.9-portable-win-x64.zip
+20F0C621AA776008E39483F6AAA65D6BC611176329227A389BACBE215AC08A66
+
+WorkTaskTracker.exe
+4BD2657CF8D1E72C1EB107EDFA50BEDFDBF9CF0E4343BBA44C0743392334A1C9
+
+使用手冊.html (user manual)
+258ACFF950E08763C095D89265822BCFEB3A50EC49EB32606C47382DFC816F21
+```
+
+Verify in PowerShell:
+
+```powershell
+Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
+```
+
+### First launch
+
+- Task data is stored by default in `E:\WorkTaskTrackerData\<Windows user name>\tasks.json`, so different Windows accounts on the same PC don't share data by accident.
+- If the PC has no E: drive, the app asks you to pick a local folder on first launch; it never changes the location on its own.
+- The actual data path is recorded in `%LOCALAPPDATA%\WorkTaskTracker\data-directory.txt`. To move data: exit the app, copy the whole folder, then update that file.
+- Don't put the data folder on a network drive or a cloud-synced folder.
+
+### Features
+
+- Task list (pending / in progress / completed), priority, progress, deadline reminders
+- Custom projects / categories, search, dashboard stat cards
+- System-tray resident mode and a desktop floating ball; Ctrl+wheel to zoom the UI (80%–150%)
+- Light / dark theme, plus automatic switching by time of day (on by default)
+- UI languages: Traditional Chinese / Simplified Chinese / English
+- Automatic backups and restore, old-data cleanup, JSON export
+- Voluntary sponsorship (local QR codes only — the app never handles payments)
+- Feedback: shows `quiet_valley@yeah.net` and only hands a `mailto:` link to your mail app when you click
+
+### Privacy & network behavior
+
+- Without a `release-config.json` file, the app makes **no network requests at all**.
+- This build has an update source configured (the `version.json` in this repository): at most once every 24 hours it reads the version list — version number and download URL only. It never auto-downloads or auto-installs updates. The anonymous usage-statistics endpoint is not configured, so statistics stay disabled.
+- If statistics were enabled, they would send at most one report per day (version, OS, UI language, random install ID) — never task names, notes, file names, paths, user names or computer names.
+- Sponsorship is offline: QR codes are read from the program folder only; amounts, codes or payment results are never uploaded, and no sponsorship events are sent.
+
+### Terms of use
+
+- This program is free software, provided "as is", with no warranty; please export backups of important data regularly.
+- The binaries are not code-signed, so Windows SmartScreen may show an "unknown publisher" prompt; use the SHA-256 checksums above to verify the files.
+- Sponsorship is entirely voluntary — it is not a transaction and unlocks nothing.
+
+### Contact
+
+Email: **quiet_valley@yeah.net** (please include the app version and Windows version, plus the steps you took and what you expected).
