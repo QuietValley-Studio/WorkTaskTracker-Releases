@@ -26,7 +26,7 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 
 | 檔案 | 說明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.10-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.10/WorkTaskTracker-1.6.10-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後含 EXE（收款碼已內嵌於程式檔）與使用手冊，共 3 個檔案 | 69,480,410 bytes |
+| [WorkTaskTracker-1.6.10-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.10/WorkTaskTracker-1.6.10-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後含 EXE（收款碼已內嵌於程式檔）與使用手冊，共 3 個檔案 | 69,480,585 bytes |
 
 下載 ZIP → 解壓到任意資料夾 → 雙擊 `WorkTaskTracker.exe` 即可。程式資料與程式資料夾分開，換版或搬移程式都不影響任務資料。
 
@@ -36,13 +36,13 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 
 ```text
 WorkTaskTracker-1.6.10-portable-win-x64.zip
-128800DF2B7BFC837FC107357FA719BE68C639646DF8B05ECF2C95B165FBBCC4
+6AE52147F6671AD4F8D9529344B4BD3F56FB309E2DAFFA699DCBA124F8E4F724
 
 WorkTaskTracker.exe
 6E27A414FB681F14D1A0CC578536E32555106422B2E85D4E5309E3092D7F1D50
 
 使用手冊.html
-846B2F1E3E48D8BDE2E43C3E80B2771E517131F73C6DBE731846E5EFCE261718
+3F355DDE016D7EF30F32503539703258D3ECA9CFC56EAB87F7E489574C318378
 ```
 
 PowerShell 驗證方式：
@@ -106,7 +106,7 @@ Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一�
 
 | 文件 | 说明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.10-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.10/WorkTaskTracker-1.6.10-portable-win-x64.zip) | **唯一需要下载的文件**。解压后含 EXE（收款码已内嵌于程序文件）与使用手册，共 3 个文件 | 69,480,410 bytes |
+| [WorkTaskTracker-1.6.10-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.10/WorkTaskTracker-1.6.10-portable-win-x64.zip) | **唯一需要下载的文件**。解压后含 EXE（收款码已内嵌于程序文件）与使用手册，共 3 个文件 | 69,480,585 bytes |
 
 下载 ZIP → 解压到任意文件夹 → 双击 `WorkTaskTracker.exe` 即可。程序数据与程序文件夹分开，换版本或搬移程序都不影响任务数据。
 
@@ -116,13 +116,13 @@ Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一�
 
 ```text
 WorkTaskTracker-1.6.10-portable-win-x64.zip
-128800DF2B7BFC837FC107357FA719BE68C639646DF8B05ECF2C95B165FBBCC4
+6AE52147F6671AD4F8D9529344B4BD3F56FB309E2DAFFA699DCBA124F8E4F724
 
 WorkTaskTracker.exe
 6E27A414FB681F14D1A0CC578536E32555106422B2E85D4E5309E3092D7F1D50
 
 使用手冊.html
-846B2F1E3E48D8BDE2E43C3E80B2771E517131F73C6DBE731846E5EFCE261718
+3F355DDE016D7EF30F32503539703258D3ECA9CFC56EAB87F7E489574C318378
 ```
 
 PowerShell 验证方式：
@@ -186,7 +186,7 @@ A Windows desktop task / to-do tracker, available **as a portable build only**: 
 
 | File | Description | Size |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.10-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.10/WorkTaskTracker-1.6.10-portable-win-x64.zip) | **The only file you need.** Contains the EXE (QR codes embedded in the binary) and the user manual (3 files) | 69,480,410 bytes |
+| [WorkTaskTracker-1.6.10-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.10/WorkTaskTracker-1.6.10-portable-win-x64.zip) | **The only file you need.** Contains the EXE (QR codes embedded in the binary) and the user manual (3 files) | 69,480,585 bytes |
 
 Download the ZIP → extract to any folder → double-click `WorkTaskTracker.exe`. Task data lives outside the program folder, so upgrading or moving the program never touches your tasks.
 
@@ -196,13 +196,13 @@ The first hash is for the ZIP file itself; the other two are for `WorkTaskTracke
 
 ```text
 WorkTaskTracker-1.6.10-portable-win-x64.zip
-128800DF2B7BFC837FC107357FA719BE68C639646DF8B05ECF2C95B165FBBCC4
+6AE52147F6671AD4F8D9529344B4BD3F56FB309E2DAFFA699DCBA124F8E4F724
 
 WorkTaskTracker.exe
 6E27A414FB681F14D1A0CC578536E32555106422B2E85D4E5309E3092D7F1D50
 
 使用手冊.html (user manual)
-846B2F1E3E48D8BDE2E43C3E80B2771E517131F73C6DBE731846E5EFCE261718
+3F355DDE016D7EF30F32503539703258D3ECA9CFC56EAB87F7E489574C318378
 ```
 
 Verify in PowerShell:
