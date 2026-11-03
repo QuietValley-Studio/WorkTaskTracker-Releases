@@ -1,5 +1,5 @@
 {
-  "version": "1.6.11",
+  "version": "1.6.12",
   "downloadUrl": "https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest",
-  "notes": "1.6.11：使用手冊內嵌於程式檔，只下載單一 EXE 也能從首頁開啟完整手冊；收款碼維持內嵌，程式資料夾放同名檔案仍可覆蓋。"
+  "notes": "1.6.12：發佈設定內嵌於程式檔，免安裝版解壓縮後只剩 EXE 與使用手冊兩個檔案；檢查更新與問題回報開箱即用，更新來源與信箱仍可透過 release-config.json 覆蓋。"
 }

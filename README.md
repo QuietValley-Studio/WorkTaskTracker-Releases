@@ -12,7 +12,7 @@ Windows 桌面待辦／任務追蹤工具（免安裝、離線優先、無帳號
 
 Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一自包含 `WorkTaskTracker.exe`，雙擊即可使用，不需要安裝、不需要管理員權限，也不需要另外安裝 .NET Runtime。
 
-- 目前版本：**1.6.11**（檔案版本 1.6.11.0）
+- 目前版本：**1.6.12**（檔案版本 1.6.12.0）
 - 系統需求：Windows 10 / Windows 11（x64）
 - 資料：單機 `tasks.json`，沒有資料庫、沒有帳號系統、不上傳任務內容
 
@@ -26,7 +26,7 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 
 | 檔案 | 說明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.11-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.11/WorkTaskTracker-1.6.11-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後含 EXE（收款碼與使用手冊都已內嵌於程式檔）與使用手冊，共 3 個檔案 | 70,604,666 bytes |
+| [WorkTaskTracker-1.6.12-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.12/WorkTaskTracker-1.6.12-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後只有 EXE（收款碼、使用手冊與發佈設定都已內嵌於程式檔）與使用手冊，共 2 個檔案 | 70,604,958 bytes |
 
 下載 ZIP → 解壓到任意資料夾 → 雙擊 `WorkTaskTracker.exe` 即可。程式資料與程式資料夾分開，換版或搬移程式都不影響任務資料。
 
@@ -35,14 +35,14 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 第一組是 ZIP 壓縮檔本身的校驗碼；後兩組是解壓後資料夾內 `WorkTaskTracker.exe` 與 `使用手冊.html` 的校驗碼，可用來確認解壓結果完整。
 
 ```text
-WorkTaskTracker-1.6.11-portable-win-x64.zip
-FE6A98D78604E3AE5C96AA826D863934B79BEBCC4EBF703F5D4362432F7ED3BF
+WorkTaskTracker-1.6.12-portable-win-x64.zip
+951D86C43984D0DCA569AF2DD26D0BD94A52B61926B004122610264E2C4ED82A
 
 WorkTaskTracker.exe
-65B35FFED188A8994217065CDD04A637A6DC36BAD848933BA8F5126CC1EB12BB
+FCDF4704E13DC382D4E43067176D9E00819C4A630718FEAB55058987AF4B0914
 
 使用手冊.html
-3F3E7BFB33774379194888F1B9247CA9B4204691989F85B5B40BDB06FCEAD011
+83019269B7C8995EF37205D74733F680F9B845A5F44F563091EE902ADB47BA55
 ```
 
 PowerShell 驗證方式：
@@ -76,6 +76,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 - 匿名統計若啟用，每天最多送出一次版本、作業系統、介面語言與隨機安裝 ID，不含任務名稱、備註、檔名、路徑、使用者名稱或電腦名稱。
 - 友情贊助不連網：收款碼自 1.6.10 起內嵌於程式檔（資料夾放同名圖片可覆蓋），不上傳金額、收款碼或付款結果，也不送出贊助事件。
 - 離線手冊雙保險：使用手冊自 1.6.11 起也內嵌於程式檔，只下載單一 EXE 也能從首頁「使用手冊」按鈕開啟完整說明（程式資料夾放新版 `使用手冊.html` 可覆蓋）。
+- **1.6.12 發佈設定內嵌**：更新來源與問題回報信箱直接寫進程式檔，解壓縮後只有 EXE 與使用手冊兩個檔案，不再附帶 `release-config.json`；散佈者要改端點或信箱時，把該檔放在 EXE 同資料夾即可覆蓋（空白或不合法欄位沿用內建值）。
 
 ### 使用條款
 
@@ -93,7 +94,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 
 Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一自包含 `WorkTaskTracker.exe`，双击即可使用，不需要安装、不需要管理员权限，也不需要另外安装 .NET Runtime。
 
-- 当前版本：**1.6.11**（文件版本 1.6.11.0）
+- 当前版本：**1.6.12**（文件版本 1.6.12.0）
 - 系统要求：Windows 10 / Windows 11（x64）
 - 数据：单机 `tasks.json`，没有数据库、没有账号系统、不上传任务内容
 
@@ -107,7 +108,7 @@ Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一�
 
 | 文件 | 说明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.11-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.11/WorkTaskTracker-1.6.11-portable-win-x64.zip) | **唯一需要下载的文件**。解压后含 EXE（收款码与使用手册都已内嵌于程序文件）与使用手册，共 3 个文件 | 70,604,666 bytes |
+| [WorkTaskTracker-1.6.12-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.12/WorkTaskTracker-1.6.12-portable-win-x64.zip) | **唯一需要下载的文件**。解压后只有 EXE（收款码、使用手册与发布设置都已内嵌于程序文件）与使用手册，共 2 个文件 | 70,604,958 bytes |
 
 下载 ZIP → 解压到任意文件夹 → 双击 `WorkTaskTracker.exe` 即可。程序数据与程序文件夹分开，换版本或搬移程序都不影响任务数据。
 
@@ -116,14 +117,14 @@ Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一�
 第一组是 ZIP 压缩包本身的校验码；后两组是解压后文件夹内 `WorkTaskTracker.exe` 与 `使用手冊.html` 的校验码，可用来确认解压结果完整。
 
 ```text
-WorkTaskTracker-1.6.11-portable-win-x64.zip
-FE6A98D78604E3AE5C96AA826D863934B79BEBCC4EBF703F5D4362432F7ED3BF
+WorkTaskTracker-1.6.12-portable-win-x64.zip
+951D86C43984D0DCA569AF2DD26D0BD94A52B61926B004122610264E2C4ED82A
 
 WorkTaskTracker.exe
-65B35FFED188A8994217065CDD04A637A6DC36BAD848933BA8F5126CC1EB12BB
+FCDF4704E13DC382D4E43067176D9E00819C4A630718FEAB55058987AF4B0914
 
 使用手冊.html
-3F3E7BFB33774379194888F1B9247CA9B4204691989F85B5B40BDB06FCEAD011
+83019269B7C8995EF37205D74733F680F9B845A5F44F563091EE902ADB47BA55
 ```
 
 PowerShell 验证方式：
@@ -157,6 +158,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 - 匿名统计若启用，每天最多发送一次版本、操作系统、界面语言与随机安装 ID，不含任务名称、备注、文件名、路径、用户名或电脑名称。
 - 友情赞助不联网：收款码自 1.6.10 起内嵌于程序文件（文件夹放同名图片可覆盖），不上传金额、收款码或付款结果，也不发送赞助事件。
 - 离线手册双保险：使用手册自 1.6.11 起也内嵌于程序文件，只下载单一 EXE 也能从首页「使用手册」按钮打开完整说明（程序文件夹放新版 `使用手册.html` 可覆盖）。
+- **1.6.12 发布设置内嵌**：更新来源与问题回报信箱直接写进程序文件，解压后只有 EXE 与使用手册两个文件，不再附带 `release-config.json`；发布者要改端点或信箱时，把该文件放在 EXE 同文件夹即可覆盖（空白或非法字段沿用内置值）。
 
 ### 使用条款
 
@@ -174,7 +176,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 
 A Windows desktop task / to-do tracker, available **as a portable build only**: a single self-contained `WorkTaskTracker.exe` — just download and double-click. No installation, no admin rights, no separate .NET Runtime needed.
 
-- Current version: **1.6.11** (file version 1.6.11.0)
+- Current version: **1.6.12** (file version 1.6.12.0)
 - Requirements: Windows 10 / Windows 11 (x64)
 - Data: local `tasks.json` only — no database, no accounts, task content never leaves your machine
 
@@ -188,7 +190,7 @@ A Windows desktop task / to-do tracker, available **as a portable build only**: 
 
 | File | Description | Size |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.11-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.11/WorkTaskTracker-1.6.11-portable-win-x64.zip) | **The only file you need.** Contains the EXE (QR codes and the user manual embedded in the binary) and the user manual (3 files) | 70,604,666 bytes |
+| [WorkTaskTracker-1.6.12-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.12/WorkTaskTracker-1.6.12-portable-win-x64.zip) | **The only file you need.** Contains just the EXE (QR codes, user manual and release configuration embedded in the binary) and the user manual (2 files) | 70,604,958 bytes |
 
 Download the ZIP → extract to any folder → double-click `WorkTaskTracker.exe`. Task data lives outside the program folder, so upgrading or moving the program never touches your tasks.
 
@@ -197,14 +199,14 @@ Download the ZIP → extract to any folder → double-click `WorkTaskTracker.exe
 The first hash is for the ZIP file itself; the other two are for `WorkTaskTracker.exe` and `使用手冊.html` inside the extracted folder, so you can verify the extracted files as well.
 
 ```text
-WorkTaskTracker-1.6.11-portable-win-x64.zip
-FE6A98D78604E3AE5C96AA826D863934B79BEBCC4EBF703F5D4362432F7ED3BF
+WorkTaskTracker-1.6.12-portable-win-x64.zip
+951D86C43984D0DCA569AF2DD26D0BD94A52B61926B004122610264E2C4ED82A
 
 WorkTaskTracker.exe
-65B35FFED188A8994217065CDD04A637A6DC36BAD848933BA8F5126CC1EB12BB
+FCDF4704E13DC382D4E43067176D9E00819C4A630718FEAB55058987AF4B0914
 
 使用手冊.html (user manual)
-3F3E7BFB33774379194888F1B9247CA9B4204691989F85B5B40BDB06FCEAD011
+83019269B7C8995EF37205D74733F680F9B845A5F44F563091EE902ADB47BA55
 ```
 
 Verify in PowerShell:
@@ -238,6 +240,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 - If statistics were enabled, they would send at most one report per day (version, OS, UI language, random install ID) — never task names, notes, file names, paths, user names or computer names.
 - Sponsorship is offline: QR codes are embedded in the binary (a same-named image in the program folder can override them); amounts, codes or payment results are never uploaded, and no sponsorship events are sent.
 - Offline manual built in: the user guide is also embedded in the EXE since 1.6.11 — even a lone EXE download can open the full guide from the home page button (a newer `使用手冊.html` beside the EXE still wins).
+- **Release configuration embedded (1.6.12):** the update feed and the feedback contact email are baked into the binary, so the zip extracts to just two files — no `release-config.json` any more; publishers can still override per field by dropping that file beside the EXE (blank or invalid entries keep the built-in values).
 
 ### Terms of use
 
