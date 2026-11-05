@@ -1,5 +1,5 @@
 {
-  "version": "1.6.15",
+  "version": "1.6.16",
   "downloadUrl": "https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest",
-  "notes": "1.6.15：修復 1.6.14 三處介面問題——彈窗動畫改純淡入不再抖動、下拉選單懸停閃爍真正修復、任務清單第一欄封頂 3/4 真正生效。"
+  "notes": "1.6.16：確認對話框全面主題化——刪除任務、清理資料、備份還原、結束程式與資料損壞復原等最後幾個原生灰色「是／否」確認框全部改為自繪對話框；危險操作確認鍵紅色提示，Enter／Esc 預設都是「取消」。"
 }
