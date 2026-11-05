@@ -1,5 +1,5 @@
 {
-  "version": "1.6.14",
+  "version": "1.6.15",
   "downloadUrl": "https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest",
-  "notes": "1.6.14：介面打磨——主題改為白天／夜間／自動三選項（預設自動，19:00 夜間、07:00 白天）、彈窗加入淡入動畫、按鈕懸停配色重做、下拉選單不再閃爍、任務清單欄寬比例調整。"
+  "notes": "1.6.15：修復 1.6.14 三處介面問題——彈窗動畫改純淡入不再抖動、下拉選單懸停閃爍真正修復、任務清單第一欄封頂 3/4 真正生效。"
 }
