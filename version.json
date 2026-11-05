@@ -1,5 +1,5 @@
 {
-  "version": "1.6.13",
+  "version": "1.6.14",
   "downloadUrl": "https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest",
-  "notes": "1.6.13：效能優化——縮放延遲合併落盤、排程備份背景寫入、啟動不再重寫任務檔、清單繪製快取字型；資料格式與功能行為不變。"
+  "notes": "1.6.14：介面打磨——主題改為白天／夜間／自動三選項（預設自動，19:00 夜間、07:00 白天）、彈窗加入淡入動畫、按鈕懸停配色重做、下拉選單不再閃爍、任務清單欄寬比例調整。"
 }

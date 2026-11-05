@@ -12,7 +12,7 @@ Windows 桌面待辦／任務追蹤工具（免安裝、離線優先、無帳號
 
 Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一自包含 `WorkTaskTracker.exe`，雙擊即可使用，不需要安裝、不需要管理員權限，也不需要另外安裝 .NET Runtime。
 
-- 目前版本：**1.6.13**（檔案版本 1.6.13.0）
+- 目前版本：**1.6.14**（檔案版本 1.6.14.0）
 - 系統需求：Windows 10 / Windows 11（x64）
 - 資料：單機 `tasks.json`，沒有資料庫、沒有帳號系統、不上傳任務內容
 
@@ -26,7 +26,7 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 
 | 檔案 | 說明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.12-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.13/WorkTaskTracker-1.6.13-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後只有 EXE（收款碼、使用手冊與發佈設定都已內嵌於程式檔）與使用手冊，共 2 個檔案 | 70,606,524 bytes |
+| [WorkTaskTracker-1.6.14-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.14/WorkTaskTracker-1.6.14-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後只有 EXE（收款碼、使用手冊與發佈設定都已內嵌於程式檔）與使用手冊，共 2 個檔案 | 70,607,140 bytes |
 
 下載 ZIP → 解壓到任意資料夾 → 雙擊 `WorkTaskTracker.exe` 即可。程式資料與程式資料夾分開，換版或搬移程式都不影響任務資料。
 
@@ -35,14 +35,14 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 第一組是 ZIP 壓縮檔本身的校驗碼；後兩組是解壓後資料夾內 `WorkTaskTracker.exe` 與 `使用手冊.html` 的校驗碼，可用來確認解壓結果完整。
 
 ```text
-WorkTaskTracker-1.6.13-portable-win-x64.zip
-A8D732DD2C966B8B9228B72A0E89B48C4516F30FA800D0DFE435BCB8CC10CAC3
+WorkTaskTracker-1.6.14-portable-win-x64.zip
+2B5DB49367E4AF6AA6287F7D9E186F631DC685718727BD9138475B9D9A3BD216
 
 WorkTaskTracker.exe
-3F46AD416718408A35AFC6707F2B491B087D6CF0BFF6B803FF4275D39460EA7F
+53CE15B1998CCEBAA9AC5CC1889FB0AC623228CFA19A3C346C05F888D29728EA
 
 使用手冊.html
-93C7A65F55A6EF7BBDD17A1B177B7BA95BE52BD20681B7D852F7898D287BA47F
+55CF97D08700ACC7F4F9D704D85B4798ACB91AC9165452DE0EDBB7F8DFC5104D
 ```
 
 PowerShell 驗證方式：
@@ -63,7 +63,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 - 任務清單（待辦／進行中／已完成）、優先級、進度、期限提醒
 - 專案／分類自訂選項、搜尋、統計卡片
 - 系統匣常駐與桌面懸浮球，Ctrl+滾輪調整介面縮放（80%～150%）
-- 白天／夜間主題切換，並可依時間自動切換（預設開啟）
+- 白天／夜間／自動（依時間）主題切換（新設定預設自動：19:00 夜間、07:00 白天）
 - 介面語言切換：繁體中文／简体中文／English
 - 自動備份與還原、清理舊資料、匯出 JSON
 - 友情贊助（完全自願，只掃描本機收款碼，程式不經手付款）
@@ -76,6 +76,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 - 匿名統計若啟用，每天最多送出一次版本、作業系統、介面語言與隨機安裝 ID，不含任務名稱、備註、檔名、路徑、使用者名稱或電腦名稱。
 - 友情贊助不連網：收款碼自 1.6.10 起內嵌於程式檔（資料夾放同名圖片可覆蓋），不上傳金額、收款碼或付款結果，也不送出贊助事件。
 - 離線手冊雙保險：使用手冊自 1.6.11 起也內嵌於程式檔，只下載單一 EXE 也能從首頁「使用手冊」按鈕開啟完整說明（程式資料夾放新版 `使用手冊.html` 可覆蓋）。
+- **1.6.14 介面打磨**：主題改為「白天／夜間／自動（依時間）」三選項（預設自動）、彈窗加入淡入動畫、按鈕懸停配色重做、下拉選單滑鼠移入不再閃爍、任務清單欄寬比例調整。
 - **1.6.13 效能優化**：連續縮放改為停止調整約一秒後合併寫入一次（結束程式前自動補寫）、排程自動備份改為背景寫入、啟動不再每次整份重寫任務檔、任務清單繪製快取粗體字型——長清單滾動與寫檔卡頓明顯減少；資料格式與功能行為不變。
 - **1.6.12 發佈設定內嵌**：更新來源與問題回報信箱直接寫進程式檔，解壓縮後只有 EXE 與使用手冊兩個檔案，不再附帶 `release-config.json`；散佈者要改端點或信箱時，把該檔放在 EXE 同資料夾即可覆蓋（空白或不合法欄位沿用內建值）。
 
@@ -95,7 +96,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 
 Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一自包含 `WorkTaskTracker.exe`，双击即可使用，不需要安装、不需要管理员权限，也不需要另外安装 .NET Runtime。
 
-- 当前版本：**1.6.13**（文件版本 1.6.13.0）
+- 当前版本：**1.6.14**（文件版本 1.6.14.0）
 - 系统要求：Windows 10 / Windows 11（x64）
 - 数据：单机 `tasks.json`，没有数据库、没有账号系统、不上传任务内容
 
@@ -109,7 +110,7 @@ Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一�
 
 | 文件 | 说明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.12-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.13/WorkTaskTracker-1.6.13-portable-win-x64.zip) | **唯一需要下载的文件**。解压后只有 EXE（收款码、使用手册与发布设置都已内嵌于程序文件）与使用手册，共 2 个文件 | 70,606,524 bytes |
+| [WorkTaskTracker-1.6.14-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.14/WorkTaskTracker-1.6.14-portable-win-x64.zip) | **唯一需要下载的文件**。解压后只有 EXE（收款码、使用手册与发布设置都已内嵌于程序文件）与使用手册，共 2 个文件 | 70,607,140 bytes |
 
 下载 ZIP → 解压到任意文件夹 → 双击 `WorkTaskTracker.exe` 即可。程序数据与程序文件夹分开，换版本或搬移程序都不影响任务数据。
 
@@ -118,14 +119,14 @@ Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一�
 第一组是 ZIP 压缩包本身的校验码；后两组是解压后文件夹内 `WorkTaskTracker.exe` 与 `使用手冊.html` 的校验码，可用来确认解压结果完整。
 
 ```text
-WorkTaskTracker-1.6.13-portable-win-x64.zip
-A8D732DD2C966B8B9228B72A0E89B48C4516F30FA800D0DFE435BCB8CC10CAC3
+WorkTaskTracker-1.6.14-portable-win-x64.zip
+2B5DB49367E4AF6AA6287F7D9E186F631DC685718727BD9138475B9D9A3BD216
 
 WorkTaskTracker.exe
-3F46AD416718408A35AFC6707F2B491B087D6CF0BFF6B803FF4275D39460EA7F
+53CE15B1998CCEBAA9AC5CC1889FB0AC623228CFA19A3C346C05F888D29728EA
 
 使用手冊.html
-93C7A65F55A6EF7BBDD17A1B177B7BA95BE52BD20681B7D852F7898D287BA47F
+55CF97D08700ACC7F4F9D704D85B4798ACB91AC9165452DE0EDBB7F8DFC5104D
 ```
 
 PowerShell 验证方式：
@@ -146,7 +147,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 - 任务清单（待办／进行中／已完成）、优先级、进度、期限提醒
 - 项目／分类自定义选项、搜索、统计卡片
 - 系统托盘常驻与桌面悬浮球，Ctrl+滚轮调整界面缩放（80%～150%）
-- 白天／夜间主题切换，并可按时间自动切换（默认开启）
+- 白天／夜间／自动（依时间）主题切换（新设置默认自动：19:00 夜间、07:00 白天）
 - 界面语言切换：繁體中文／简体中文／English
 - 自动备份与还原、清理旧数据、导出 JSON
 - 友情赞助（完全自愿，只扫描本机收款码，程序不经手付款）
@@ -159,6 +160,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 - 匿名统计若启用，每天最多发送一次版本、操作系统、界面语言与随机安装 ID，不含任务名称、备注、文件名、路径、用户名或电脑名称。
 - 友情赞助不联网：收款码自 1.6.10 起内嵌于程序文件（文件夹放同名图片可覆盖），不上传金额、收款码或付款结果，也不发送赞助事件。
 - 离线手册双保险：使用手册自 1.6.11 起也内嵌于程序文件，只下载单一 EXE 也能从首页「使用手册」按钮打开完整说明（程序文件夹放新版 `使用手册.html` 可覆盖）。
+- **1.6.14 界面打磨**：主题改为「白天／夜间／自动（依时间）」三选项（默认自动）、弹窗加入淡入动画、按钮悬停配色重做、下拉菜单鼠标移入不再闪烁、任务列表栏宽比例调整。
 - **1.6.13 性能优化**：连续缩放改为停止调整约一秒后合并写入一次（结束程序前自动补写）、排程自动备份转为后台写入、启动不再每次整份重写任务文件、任务列表绘制缓存粗体字体——长列表滚动与写文件卡顿明显减少；数据格式与功能行为不变。
 - **1.6.12 发布设置内嵌**：更新来源与问题回报信箱直接写进程序文件，解压后只有 EXE 与使用手册两个文件，不再附带 `release-config.json`；发布者要改端点或信箱时，把该文件放在 EXE 同文件夹即可覆盖（空白或非法字段沿用内置值）。
 
@@ -178,7 +180,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 
 A Windows desktop task / to-do tracker, available **as a portable build only**: a single self-contained `WorkTaskTracker.exe` — just download and double-click. No installation, no admin rights, no separate .NET Runtime needed.
 
-- Current version: **1.6.13** (file version 1.6.13.0)
+- Current version: **1.6.14** (file version 1.6.14.0)
 - Requirements: Windows 10 / Windows 11 (x64)
 - Data: local `tasks.json` only — no database, no accounts, task content never leaves your machine
 
@@ -192,7 +194,7 @@ A Windows desktop task / to-do tracker, available **as a portable build only**: 
 
 | File | Description | Size |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.12-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.13/WorkTaskTracker-1.6.13-portable-win-x64.zip) | **The only file you need.** Contains just the EXE (QR codes, user manual and release configuration embedded in the binary) and the user manual (2 files) | 70,606,524 bytes |
+| [WorkTaskTracker-1.6.14-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.14/WorkTaskTracker-1.6.14-portable-win-x64.zip) | **The only file you need.** Contains just the EXE (QR codes, user manual and release configuration embedded in the binary) and the user manual (2 files) | 70,607,140 bytes |
 
 Download the ZIP → extract to any folder → double-click `WorkTaskTracker.exe`. Task data lives outside the program folder, so upgrading or moving the program never touches your tasks.
 
@@ -201,14 +203,14 @@ Download the ZIP → extract to any folder → double-click `WorkTaskTracker.exe
 The first hash is for the ZIP file itself; the other two are for `WorkTaskTracker.exe` and `使用手冊.html` inside the extracted folder, so you can verify the extracted files as well.
 
 ```text
-WorkTaskTracker-1.6.13-portable-win-x64.zip
-A8D732DD2C966B8B9228B72A0E89B48C4516F30FA800D0DFE435BCB8CC10CAC3
+WorkTaskTracker-1.6.14-portable-win-x64.zip
+2B5DB49367E4AF6AA6287F7D9E186F631DC685718727BD9138475B9D9A3BD216
 
 WorkTaskTracker.exe
-3F46AD416718408A35AFC6707F2B491B087D6CF0BFF6B803FF4275D39460EA7F
+53CE15B1998CCEBAA9AC5CC1889FB0AC623228CFA19A3C346C05F888D29728EA
 
 使用手冊.html (user manual)
-93C7A65F55A6EF7BBDD17A1B177B7BA95BE52BD20681B7D852F7898D287BA47F
+55CF97D08700ACC7F4F9D704D85B4798ACB91AC9165452DE0EDBB7F8DFC5104D
 ```
 
 Verify in PowerShell:
@@ -229,7 +231,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 - Task list (pending / in progress / completed), priority, progress, deadline reminders
 - Custom projects / categories, search, dashboard stat cards
 - System-tray resident mode and a desktop floating ball; Ctrl+wheel to zoom the UI (80%–150%)
-- Light / dark theme, plus automatic switching by time of day (on by default)
+- Light / dark / automatic theme switching — the three-option selector (light, dark, auto by time of day) defaults to **auto** (dark at 19:00, light at 07:00)
 - UI languages: Traditional Chinese / Simplified Chinese / English
 - Automatic backups and restore, old-data cleanup, JSON export
 - Voluntary sponsorship (local QR codes only — the app never handles payments)
@@ -242,6 +244,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 - If statistics were enabled, they would send at most one report per day (version, OS, UI language, random install ID) — never task names, notes, file names, paths, user names or computer names.
 - Sponsorship is offline: QR codes are embedded in the binary (a same-named image in the program folder can override them); amounts, codes or payment results are never uploaded, and no sponsorship events are sent.
 - Offline manual built in: the user guide is also embedded in the EXE since 1.6.11 — even a lone EXE download can open the full guide from the home page button (a newer `使用手冊.html` beside the EXE still wins).
+- **UI polish (1.6.14):** the theme selector now offers light / dark / automatic (on by default), dialogs fade in smoothly, button hover colors were redesigned, combo boxes no longer flicker on hover, and the first task-list column is proportionally narrower.
 - **Performance improvements (1.6.13):** continuous zoom now saves once about a second after you stop (debounced, flushed on exit), scheduled backups run in the background, startup no longer rewrites the task file, and the list renderer caches bold fonts — noticeably fewer UI stalls; data format and behaviour unchanged.
 - **Release configuration embedded (1.6.12):** the update feed and the feedback contact email are baked into the binary, so the zip extracts to just two files — no `release-config.json` any more; publishers can still override per field by dropping that file beside the EXE (blank or invalid entries keep the built-in values).
 
