@@ -12,7 +12,7 @@ Windows 桌面待辦／任務追蹤工具（免安裝、離線優先、無帳號
 
 Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一自包含 `WorkTaskTracker.exe`，雙擊即可使用，不需要安裝、不需要管理員權限，也不需要另外安裝 .NET Runtime。
 
-- 目前版本：**1.6.17**（檔案版本 1.6.17.0）
+- 目前版本：**1.6.16**（檔案版本 1.6.16.0）
 - 系統需求：Windows 10 / Windows 11（x64）
 - 資料：單機 `tasks.json`，沒有資料庫、沒有帳號系統、不上傳任務內容
 
@@ -26,7 +26,7 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 
 | 檔案 | 說明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.17-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.17/WorkTaskTracker-1.6.17-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後只有 EXE（收款碼、使用手冊與發佈設定都已內嵌於程式檔）與使用手冊，共 2 個檔案 | 70,625,515 bytes |
+| [WorkTaskTracker-1.6.16-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.16/WorkTaskTracker-1.6.16-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後只有 EXE（收款碼、使用手冊與發佈設定都已內嵌於程式檔）與使用手冊，共 2 個檔案 | 70,607,527 bytes |
 
 下載 ZIP → 解壓到任意資料夾 → 雙擊 `WorkTaskTracker.exe` 即可。程式資料與程式資料夾分開，換版或搬移程式都不影響任務資料。
 
@@ -35,14 +35,14 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 第一組是 ZIP 壓縮檔本身的校驗碼；後兩組是解壓後資料夾內 `WorkTaskTracker.exe` 與 `使用手冊.html` 的校驗碼，可用來確認解壓結果完整。
 
 ```text
-WorkTaskTracker-1.6.17-portable-win-x64.zip
-7C9F3A257575AA2B1346E495E6AFDEACD1BAC819F26395076D2F2377343FD030
+WorkTaskTracker-1.6.16-portable-win-x64.zip
+2CDC11211D73E818471E2BC1B2CC8F6D0496A0929908CD7CBC4AC4B3D80C8407
 
 WorkTaskTracker.exe
-CDEDD976B66127B8BD8365E4FDE49BA2E50C5C4F8F59B5FA0A1AC9778BCC9F89
+2371B98F3D13FB2F6087387AFE2047E50FFF4A3E034FDBD4A7F00C8E52B2E8AB
 
 使用手冊.html
-9A7037B4714BFAE1B536DFE59190F5158788A766F2D66AAEDA801B64C52C01EF
+CA66B754C10B452D8ECA40B45ADFD64EB4E3903A77BA8D97412397872529C734
 ```
 
 PowerShell 驗證方式：
@@ -76,7 +76,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 - 匿名統計若啟用，每天最多送出一次版本、作業系統、介面語言與隨機安裝 ID，不含任務名稱、備註、檔名、路徑、使用者名稱或電腦名稱。
 - 友情贊助不連網：收款碼自 1.6.10 起內嵌於程式檔（資料夾放同名圖片可覆蓋），不上傳金額、收款碼或付款結果，也不送出贊助事件。
 - 離線手冊雙保險：使用手冊自 1.6.11 起也內嵌於程式檔，只下載單一 EXE 也能從首頁「使用手冊」按鈕開啟完整說明（程式資料夾放新版 `使用手冊.html` 可覆蓋）。
-- **1.6.17 確認對話框全面主題化**：刪除任務、清理資料、備份還原、結束程式與資料損壞復原等最後幾個 Windows 原生灰色「是／否」確認框，全部改為與介面同一套配色、字型與彈出動畫的自繪對話框；危險操作的「確定」按鈕以紅色提示，Enter／Esc 預設都落在「取消」。
+- **1.6.16 確認對話框全面主題化**：刪除任務、清理資料、備份還原、結束程式與資料損壞復原等最後幾個 Windows 原生灰色「是／否」確認框，全部改為與介面同一套配色、字型與彈出動畫的自繪對話框；危險操作的「確定」按鈕以紅色提示，Enter／Esc 預設都落在「取消」。
 - **1.6.15 介面修復***：彈窗動畫改為純淡入（不再抖動）、下拉選單懸停閃爍真正修復（只重繪箭頭區＋抑制背景擦除）、任務清單第一欄封頂為剩餘寬度的 3/4 真正生效。
 - **1.6.14 介面打磨**：主題改為「白天／夜間／自動（依時間）」三選項（預設自動）、彈窗加入淡入動畫、按鈕懸停配色重做、下拉選單滑鼠移入不再閃爍、任務清單欄寬比例調整。
 - **1.6.13 效能優化**：連續縮放改為停止調整約一秒後合併寫入一次（結束程式前自動補寫）、排程自動備份改為背景寫入、啟動不再每次整份重寫任務檔、任務清單繪製快取粗體字型——長清單滾動與寫檔卡頓明顯減少；資料格式與功能行為不變。
@@ -98,7 +98,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 
 Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一自包含 `WorkTaskTracker.exe`，双击即可使用，不需要安装、不需要管理员权限，也不需要另外安装 .NET Runtime。
 
-- 当前版本：**1.6.17**（文件版本 1.6.17.0）
+- 当前版本：**1.6.16**（文件版本 1.6.16.0）
 - 系统要求：Windows 10 / Windows 11（x64）
 - 数据：单机 `tasks.json`，没有数据库、没有账号系统、不上传任务内容
 
@@ -112,7 +112,7 @@ Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一�
 
 | 文件 | 说明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.17-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.17/WorkTaskTracker-1.6.17-portable-win-x64.zip) | **唯一需要下载的文件**。解压后只有 EXE（收款码、使用手册与发布设置都已内嵌于程序文件）与使用手册，共 2 个文件 | 70,625,515 bytes |
+| [WorkTaskTracker-1.6.16-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.16/WorkTaskTracker-1.6.16-portable-win-x64.zip) | **唯一需要下载的文件**。解压后只有 EXE（收款码、使用手册与发布设置都已内嵌于程序文件）与使用手册，共 2 个文件 | 70,607,527 bytes |
 
 下载 ZIP → 解压到任意文件夹 → 双击 `WorkTaskTracker.exe` 即可。程序数据与程序文件夹分开，换版本或搬移程序都不影响任务数据。
 
@@ -121,14 +121,14 @@ Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一�
 第一组是 ZIP 压缩包本身的校验码；后两组是解压后文件夹内 `WorkTaskTracker.exe` 与 `使用手冊.html` 的校验码，可用来确认解压结果完整。
 
 ```text
-WorkTaskTracker-1.6.17-portable-win-x64.zip
-7C9F3A257575AA2B1346E495E6AFDEACD1BAC819F26395076D2F2377343FD030
+WorkTaskTracker-1.6.16-portable-win-x64.zip
+2CDC11211D73E818471E2BC1B2CC8F6D0496A0929908CD7CBC4AC4B3D80C8407
 
 WorkTaskTracker.exe
-CDEDD976B66127B8BD8365E4FDE49BA2E50C5C4F8F59B5FA0A1AC9778BCC9F89
+2371B98F3D13FB2F6087387AFE2047E50FFF4A3E034FDBD4A7F00C8E52B2E8AB
 
 使用手冊.html
-9A7037B4714BFAE1B536DFE59190F5158788A766F2D66AAEDA801B64C52C01EF
+CA66B754C10B452D8ECA40B45ADFD64EB4E3903A77BA8D97412397872529C734
 ```
 
 PowerShell 验证方式：
@@ -162,7 +162,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 - 匿名统计若启用，每天最多发送一次版本、操作系统、界面语言与随机安装 ID，不含任务名称、备注、文件名、路径、用户名或电脑名称。
 - 友情赞助不联网：收款码自 1.6.10 起内嵌于程序文件（文件夹放同名图片可覆盖），不上传金额、收款码或付款结果，也不发送赞助事件。
 - 离线手册双保险：使用手册自 1.6.11 起也内嵌于程序文件，只下载单一 EXE 也能从首页「使用手册」按钮打开完整说明（程序文件夹放新版 `使用手册.html` 可覆盖）。
-- **1.6.17 确认对话框全面主题化**：删除任务、清理数据、备份还原、结束程序与数据损坏恢复等最后几个 Windows 原生灰色「是／否」确认框，全部改为与界面同一套配色、字体与弹出动画的自绘对话框；危险操作的「确定」按钮以红色提示，Enter／Esc 默认都落在「取消」。
+- **1.6.16 确认对话框全面主题化**：删除任务、清理数据、备份还原、结束程序与数据损坏恢复等最后几个 Windows 原生灰色「是／否」确认框，全部改为与界面同一套配色、字体与弹出动画的自绘对话框；危险操作的「确定」按钮以红色提示，Enter／Esc 默认都落在「取消」。
 - **1.6.15 界面修复***：弹窗动画改为纯淡入（不再抖动）、下拉菜单悬停闪烁真正修复（只重绘箭头区＋抑制背景擦除）、任务列表第一栏封顶为剩余宽度的 3/4 真正生效。
 - **1.6.14 界面打磨**：主题改为「白天／夜间／自动（依时间）」三选项（默认自动）、弹窗加入淡入动画、按钮悬停配色重做、下拉菜单鼠标移入不再闪烁、任务列表栏宽比例调整。
 - **1.6.13 性能优化**：连续缩放改为停止调整约一秒后合并写入一次（结束程序前自动补写）、排程自动备份转为后台写入、启动不再每次整份重写任务文件、任务列表绘制缓存粗体字体——长列表滚动与写文件卡顿明显减少；数据格式与功能行为不变。
@@ -184,7 +184,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 
 A Windows desktop task / to-do tracker, available **as a portable build only**: a single self-contained `WorkTaskTracker.exe` — just download and double-click. No installation, no admin rights, no separate .NET Runtime needed.
 
-- Current version: **1.6.17** (file version 1.6.17.0)
+- Current version: **1.6.16** (file version 1.6.16.0)
 - Requirements: Windows 10 / Windows 11 (x64)
 - Data: local `tasks.json` only — no database, no accounts, task content never leaves your machine
 
@@ -198,7 +198,7 @@ A Windows desktop task / to-do tracker, available **as a portable build only**: 
 
 | File | Description | Size |
 | --- | --- | --- |
-| [WorkTaskTracker-1.6.17-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.17/WorkTaskTracker-1.6.17-portable-win-x64.zip) | **The only file you need.** Contains just the EXE (QR codes, user manual and release configuration embedded in the binary) and the user manual (2 files) | 70,625,515 bytes |
+| [WorkTaskTracker-1.6.16-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.6.16/WorkTaskTracker-1.6.16-portable-win-x64.zip) | **The only file you need.** Contains just the EXE (QR codes, user manual and release configuration embedded in the binary) and the user manual (2 files) | 70,607,527 bytes |
 
 Download the ZIP → extract to any folder → double-click `WorkTaskTracker.exe`. Task data lives outside the program folder, so upgrading or moving the program never touches your tasks.
 
@@ -207,14 +207,14 @@ Download the ZIP → extract to any folder → double-click `WorkTaskTracker.exe
 The first hash is for the ZIP file itself; the other two are for `WorkTaskTracker.exe` and `使用手冊.html` inside the extracted folder, so you can verify the extracted files as well.
 
 ```text
-WorkTaskTracker-1.6.17-portable-win-x64.zip
-7C9F3A257575AA2B1346E495E6AFDEACD1BAC819F26395076D2F2377343FD030
+WorkTaskTracker-1.6.16-portable-win-x64.zip
+2CDC11211D73E818471E2BC1B2CC8F6D0496A0929908CD7CBC4AC4B3D80C8407
 
 WorkTaskTracker.exe
-CDEDD976B66127B8BD8365E4FDE49BA2E50C5C4F8F59B5FA0A1AC9778BCC9F89
+2371B98F3D13FB2F6087387AFE2047E50FFF4A3E034FDBD4A7F00C8E52B2E8AB
 
 使用手冊.html (user manual)
-9A7037B4714BFAE1B536DFE59190F5158788A766F2D66AAEDA801B64C52C01EF
+CA66B754C10B452D8ECA40B45ADFD64EB4E3903A77BA8D97412397872529C734
 ```
 
 Verify in PowerShell:
@@ -248,7 +248,7 @@ Get-FileHash .\WorkTaskTracker.exe -Algorithm SHA256
 - If statistics were enabled, they would send at most one report per day (version, OS, UI language, random install ID) — never task names, notes, file names, paths, user names or computer names.
 - Sponsorship is offline: QR codes are embedded in the binary (a same-named image in the program folder can override them); amounts, codes or payment results are never uploaded, and no sponsorship events are sent.
 - Offline manual built in: the user guide is also embedded in the EXE since 1.6.11 — even a lone EXE download can open the full guide from the home page button (a newer `使用手冊.html` beside the EXE still wins).
-- **Themed confirm dialogs (1.6.17):** the last few native gray Yes/No confirms (delete task, cleanup, backup restore, exit, data recovery) are replaced by the same themed, font-matched, animated dialog; destructive confirmations are red, and Enter/Esc default to Cancel.
+- **Themed confirm dialogs (1.6.16):** the last few native gray Yes/No confirms (delete task, cleanup, backup restore, exit, data recovery) are replaced by the same themed, font-matched, animated dialog; destructive confirmations are red, and Enter/Esc default to Cancel.
 - **UI fixes (1.6.15):** dialogs now fade in only (no more jitter from per-frame resizing), combo hover flicker is properly fixed (arrow-region-only repaint plus suppressed background erase), and the first task-list column is really capped at 3/4 of the free width.
 - **UI polish (1.6.14):** the theme selector now offers light / dark / automatic (on by default), dialogs fade in smoothly, button hover colors were redesigned, combo boxes no longer flicker on hover, and the first task-list column is proportionally narrower.
 - **Performance improvements (1.6.13):** continuous zoom now saves once about a second after you stop (debounced, flushed on exit), scheduled backups run in the background, startup no longer rewrites the task file, and the list renderer caches bold fonts — noticeably fewer UI stalls; data format and behaviour unchanged.
