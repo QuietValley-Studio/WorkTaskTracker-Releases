@@ -22,7 +22,7 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 
 | 檔案 | 說明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.7.0-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.0/WorkTaskTracker-1.7.0-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後只有 EXE（收款碼、使用手冊與發佈設定都已內嵌）與使用手冊，共 2 個檔案 | 70,700,722 bytes |
+| [WorkTaskTracker-1.7.0-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.0/WorkTaskTracker-1.7.0-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後只有 EXE（收款碼、使用手冊與發佈設定都已內嵌）與使用手冊，共 2 個檔案 | 70,700,746 bytes |
 
 下載 ZIP → 解壓到任意資料夾 → 雙擊 `WorkTaskTracker.exe`。任務資料與程式資料夾分開，換版或搬移程式都不影響任務資料。
 
@@ -30,10 +30,10 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 
 ```text
 WorkTaskTracker-1.7.0-portable-win-x64.zip
-CD52BB4B663E41A253EFA87A637FAE918C4AFAE563B99780FC0AEBD5E0FA8580
+4BCF8AA9844F7DA2D76DEC08A1707C3C05AEBBEE129D0A3FFCA879DA51878FD5
 
 WorkTaskTracker.exe
-AA5227A65C8EB3F6649FE803C7A330930BE9B65A0ACCFFABC90F4F23F94880C0
+78BDF18707AF419A5955E0ECDC7AD4D3A76E30ABA27D0C4C12EA4FB8FB01BD59
 
 使用手冊.html
 B006AF9275000F6E223F08BD42B23188AF9B1610F8897FB087DA0E0A182E66B9
@@ -79,7 +79,7 @@ Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一�
 
 | 文件 | 说明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.7.0-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.0/WorkTaskTracker-1.7.0-portable-win-x64.zip) | **唯一需要下载的文件**。解压后只有 EXE（收款码、使用手册与发布设置都已内嵌）与使用手册，共 2 个文件 | 70,700,722 bytes |
+| [WorkTaskTracker-1.7.0-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.0/WorkTaskTracker-1.7.0-portable-win-x64.zip) | **唯一需要下载的文件**。解压后只有 EXE（收款码、使用手册与发布设置都已内嵌）与使用手册，共 2 个文件 | 70,700,746 bytes |
 
 SHA-256 与繁体中文段落相同。
 
@@ -109,7 +109,7 @@ A portable, offline-first Windows desktop task tracker. **Portable only**: a sin
 
 | File | Notes | Size |
 | --- | --- | --- |
-| [WorkTaskTracker-1.7.0-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.0/WorkTaskTracker-1.7.0-portable-win-x64.zip) | **The only file you need**. Unzip to get the EXE (payment codes, manual and release settings embedded) and the manual — 2 files total | 70,700,722 bytes |
+| [WorkTaskTracker-1.7.0-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.0/WorkTaskTracker-1.7.0-portable-win-x64.zip) | **The only file you need**. Unzip to get the EXE (payment codes, manual and release settings embedded) and the manual — 2 files total | 70,700,746 bytes |
 
 SHA-256 values are the same as in the Traditional Chinese section.
 
