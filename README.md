@@ -12,7 +12,7 @@ Windows 桌面待辦／任務追蹤工具（免安裝、離線優先、無帳號
 
 Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一自包含 `WorkTaskTracker.exe`，雙擊即可使用，不需要安裝、不需要管理員權限，也不需要另外安裝 .NET Runtime。
 
-- 目前版本：**1.7.0**（檔案版本 1.7.0.0）
+- 目前版本：**1.7.1**（檔案版本 1.7.1.0）
 - 系統需求：Windows 10 / Windows 11（x64）
 - 資料：單機 `tasks.json`，沒有資料庫、沒有帳號系統、不上傳任務內容
 
@@ -22,34 +22,32 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 
 | 檔案 | 說明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.7.0-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.0/WorkTaskTracker-1.7.0-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後只有 EXE（收款碼、使用手冊與發佈設定都已內嵌）與使用手冊，共 2 個檔案 | 70,700,746 bytes |
+| [WorkTaskTracker-1.7.1-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.1/WorkTaskTracker-1.7.1-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後只有 EXE（收款碼、使用手冊與發佈設定都已內嵌）與使用手冊，共 2 個檔案 | 70,643,441 bytes |
 
 下載 ZIP → 解壓到任意資料夾 → 雙擊 `WorkTaskTracker.exe`。任務資料與程式資料夾分開，換版或搬移程式都不影響任務資料。
 
 ### 校驗碼（SHA-256）
 
 ```text
-WorkTaskTracker-1.7.0-portable-win-x64.zip
-4BCF8AA9844F7DA2D76DEC08A1707C3C05AEBBEE129D0A3FFCA879DA51878FD5
+WorkTaskTracker-1.7.1-portable-win-x64.zip
+5F6801FDF483ED1EE97C87FC68D6E4B2DCC6C41BF753049FE81D2C24D4BDA032
 
 WorkTaskTracker.exe
-78BDF18707AF419A5955E0ECDC7AD4D3A76E30ABA27D0C4C12EA4FB8FB01BD59
+8FD72CCDBD621402B8E6A6D24F02295B9AD286F4D15F5622321309A852DF30D0
 
 使用手冊.html
-5BFA1A43548748FC5E7B772168BE5B94364C0655ACCFF07EADE2095C9BAD5721
+865D00EA89A33EB692444A04C7FAB292FFFBB93281796B237B84CE4EFC7D8877
 ```
 
-### 1.7.0 重點
+### 1.7.1 重點
 
-- **全站 QQ 風格配色**：白天 QQ 藍＋淺灰工作台＋白卡片；夜間近黑底＋深灰卡片；按鈕、統計卡、下拉、狀態標籤、進度條、提醒卡與列內操作統一。
-- **移除匿名使用統計**：不再有安裝 ID、統計端點或背景心跳；只保留檢查更新讀取公開版本清單。
-- **檢查更新修正**：預設改用 jsDelivr 鏡像優先、官方來源次之；失敗時顯示實際原因。
-- **彈窗動畫**：開啟淡入＋上滑、關閉淡出＋下滑；修正首次啟動整片半透明的問題。
-- **下拉選單重寫**：字級與列高加大、箭頭區加大；離屏快取並停止 hover 重繪，消除閃爍。
-- **提醒輸入友善化**：常用 1 天／1 小時／30 分／15 分／5 分膠囊多選＋自訂分鐘。
-- **可更改資料位置**：新位置已有資料會詢問是否直接改用；空白則詢問是否複製目前資料。
-- **CSV 批量導入**：下載模板、選檔、預覽與逐列錯誤提示，整批成功才寫入。
-- **備份視窗修正**：加寬並改等寬按鈕，避免文字與按鈕截斷；底部摘要區縮小。
+- **任務清單瘦身並自動撐滿寬度**：刪除「刪除」之後的專案、預計完成、預估工時與各時間戳記欄位（資料仍完整保留在 `tasks.json`，只是不再佔版面）；最前面新增「序號」欄，永遠從 1 遞增；「備註」欄移到操作按鈕前面，一眼看完再決定動作。
+- **四張統計卡四種顏色**：未結束＝藍、進行中＝琥珀、已逾期＝紅、已完成＝青，卡片底色與邊框也依顏色淡淡染色，不必讀文字就能分辨。
+- **表頭按鈕分成左右兩組**：使用手冊與「＋ 新增任務」靠左，「問題回報」與「友情贊助」靠右；友情贊助按鈕加上緩慢呼吸的高光（約 2.3 秒一循環），只是提示入口存在，不搶主按鈕。
+- **專案／分類改為「先建立、後挑選」**：任務編輯視窗的下拉選單不再接受輸入，第一項固定「未分類」，要新增選項得按「管理選項」；管理視窗改成卡片式（輸入名稱→按加入→出現小卡片，點卡片上的 × 移除），與提前提醒的操作方式一致。
+- **批量導入視窗**：移除沒有作用的錯誤文字框，視窗改為依內容自動調整高度，說明與錯誤訊息變多時自己長高，不再出現垂直捲軸。
+- **篩選只認真的點選**：把滑鼠停在下拉選項上不會再自己換篩選，清單被外力關閉時也會還原；篩選項目改名為「未結束（含未開始）」，欄寬依文字實測，不再出現「未結束（含未開…」。
+- **其他修復**：時程分頁「加入提醒」的單位下拉選單邊框消失；下拉選單重寫繪製層（換值立刻反映、滑鼠移入不再閃）；彈窗關閉不再讓後方視窗閃一下；側欄底色由暖米白改為近白。
 
 ### 隱私與網路行為
 
@@ -71,7 +69,7 @@ WorkTaskTracker.exe
 
 Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一自包含 `WorkTaskTracker.exe`，双击即可使用，不需要安装、不需要管理员权限，也不需要另外安装 .NET Runtime。
 
-- 当前版本：**1.7.0**（文件版本 1.7.0.0）
+- 当前版本：**1.7.1**（文件版本 1.7.1.0）
 - 系统需求：Windows 10 / Windows 11（x64）
 - 数据：单机 `tasks.json`，没有数据库、没有账号系统、不上传任务内容
 
@@ -79,17 +77,19 @@ Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一�
 
 | 文件 | 说明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.7.0-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.0/WorkTaskTracker-1.7.0-portable-win-x64.zip) | **唯一需要下载的文件**。解压后只有 EXE（收款码、使用手册与发布设置都已内嵌）与使用手册，共 2 个文件 | 70,700,746 bytes |
+| [WorkTaskTracker-1.7.1-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.1/WorkTaskTracker-1.7.1-portable-win-x64.zip) | **唯一需要下载的文件**。解压后只有 EXE（收款码、使用手册与发布设置都已内嵌）与使用手册，共 2 个文件 | 70,643,441 bytes |
 
 SHA-256 与繁体中文段落相同。
 
-### 1.7.0 重点
+### 1.7.1 重点
 
-- **全站 QQ 风格配色**：白天 QQ 蓝＋浅灰工作台＋白卡片；夜间近黑底＋深灰卡片；按钮、统计卡、下拉、状态标签、进度条、提醒卡与行内操作统一。
-- **移除匿名使用统计**；**检查更新改用镜像优先**；**弹窗开启/关闭淡入淡出**并修正首次启动半透明。
-- **下拉选单重写**：字体与列高加大、消除箭头闪烁；**提醒改常用胶囊＋自定义分钟**。
-- **可更改数据位置**：新位置已有数据会询问是否直接改用，空白则询问是否复制。
-- **CSV 批量导入**（模板下载、预览、逐列错误）；**备份窗口加宽**避免截断；底部摘要缩小。
+- **任务清单精简并自动撑满宽度**：删除「删除」之后的项目、预计完成、预估工时与各时间戳字段（数据仍完整保存在 `tasks.json`）；最前面新增「序号」列，永远从 1 递增；「备注」列移到操作按钮前。
+- **四张统计卡四种颜色**：未结束＝蓝、进行中＝琥珀、已逾期＝红、已完成＝青，卡片底色与边框也按颜色淡淡染色。
+- **表头按钮分左右两组**：使用手册与「＋ 新增任务」靠左，问题回馈与友情赞助靠右；友情赞助按钮加上缓慢呼吸的高光。
+- **项目／分类改为「先建立、后挑选」**：编辑窗口的下拉不再接受输入，管理窗口改为卡片式（输入→加入→出现卡片，点 × 移除）。
+- **批量导入窗口**：移除无用的错误文本框，改为按内容自动调整高度，不再出现滚动条。
+- **筛选只认真正的点选**：鼠标滑过下拉选项不会再自动换筛选；项目改名为「未结束（含未开始）」。
+- **其他修复**：加入提醒的单位下拉边框消失；下拉菜单重写绘制层；关闭弹窗不再让后面窗口闪一下；侧栏底色改为近白。
 
 ### 隐私
 
@@ -101,7 +101,7 @@ SHA-256 与繁体中文段落相同。
 
 A portable, offline-first Windows desktop task tracker. **Portable only**: a single self-contained `WorkTaskTracker.exe`, no installation, no admin rights and no separate .NET Runtime.
 
-- Current version: **1.7.0** (file version 1.7.0.0)
+- Current version: **1.7.1** (file version 1.7.1.0)
 - Requirements: Windows 10 / 11 x64
 - Data: local `tasks.json`; no database, no account, no task-content upload
 
@@ -109,17 +109,19 @@ A portable, offline-first Windows desktop task tracker. **Portable only**: a sin
 
 | File | Notes | Size |
 | --- | --- | --- |
-| [WorkTaskTracker-1.7.0-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.0/WorkTaskTracker-1.7.0-portable-win-x64.zip) | **The only file you need**. Unzip to get the EXE (payment codes, manual and release settings embedded) and the manual — 2 files total | 70,700,746 bytes |
+| [WorkTaskTracker-1.7.1-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.1/WorkTaskTracker-1.7.1-portable-win-x64.zip) | **The only file you need**. Unzip to get the EXE (payment codes, manual and release settings embedded) and the manual — 2 files total | 70,643,441 bytes |
 
 SHA-256 values are the same as in the Traditional Chinese section.
 
-### What's new in 1.7.0
+### What's new in 1.7.1
 
-- **QQ-style palette for light and dark themes**: QQ blue accent, light gray workspace and white cards in light mode; near-black background and dark cards at night. Buttons, stat cards, dropdowns, status pills, progress bars, reminder cards and row actions all follow the same palette.
-- **Anonymous usage reporting removed**; **update checks prefer the jsDelivr mirror** and show the real failure reason.
-- **Open/close popup animations** (fade + slide) and a fix for the first-launch translucent window.
-- **Rewritten dropdowns** with larger text, no hover flicker; **friendly reminder presets + custom minutes**.
-- **Change data location** with copy / detect-manual-move prompts; **CSV batch import** with template, preview and row errors; **wider backup dialog**; **compact bottom summary**.
+- **A leaner task list that fills the card**: every column after the delete action (project, expected date, estimated hours, timestamps) is gone from the grid — the data stays in `tasks.json`; a new `#` column counts from 1; the notes column moved in front of the row actions.
+- **Four distinct stat-card colours**: open = blue, in progress = amber, overdue = red, completed = teal, with tinted fills and borders so you can tell them apart without reading.
+- **Header buttons split into two groups**: manual and “+ New task” on the left, feedback and sponsor on the right; the sponsor button breathes slowly (~2.3 s cycle) so the entry point is noticeable without stealing focus.
+- **Categories are create-first, then pick**: the editor dropdown is read-only and starts with “未分類” (uncategorised); the manager is now chip-based (type → add → chip appears, click × to remove), matching the reminder editor.
+- **Import dialog** sizes itself to its content — the dead error text box is gone and long notes no longer force a scrollbar.
+- **The status filter only applies a real pick**: hovering an item no longer changes the filter, and an externally closed list restores the previous choice; the first entry is now “未結束（含未開始）” (open, including not started).
+- **Fixes**: missing border on the reminder unit dropdown, a repainted dropdown layer (instant value changes, no hover flicker), no more flash on the window behind a closing dialog, and a near-white sidebar.
 
 ### Privacy
 
