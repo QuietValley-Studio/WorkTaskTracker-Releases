@@ -12,7 +12,7 @@ Windows 桌面待辦／任務追蹤工具（免安裝、離線優先、無帳號
 
 Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一自包含 `WorkTaskTracker.exe`，雙擊即可使用，不需要安裝、不需要管理員權限，也不需要另外安裝 .NET Runtime。
 
-- 目前版本：**1.7.2**（檔案版本 1.7.2.0）
+- 目前版本：**1.7.3**（檔案版本 1.7.3.0）
 - 系統需求：Windows 10 / Windows 11（x64）
 - 資料：單機 `tasks.json`，沒有資料庫、沒有帳號系統、不上傳任務內容
 
@@ -22,22 +22,29 @@ Windows 桌面待辦／任務追蹤工具，**只提供免安裝版**：單一�
 
 | 檔案 | 說明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.7.2-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.2/WorkTaskTracker-1.7.2-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後只有 EXE（收款碼、使用手冊與發佈設定都已內嵌）與使用手冊，共 2 個檔案 | 70,873,379 bytes |
+| [WorkTaskTracker-1.7.3-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.3/WorkTaskTracker-1.7.3-portable-win-x64.zip) | **唯一需要下載的檔案**。解壓後只有 EXE（收款碼、使用手冊與發佈設定都已內嵌）與使用手冊，共 2 個檔案 | 70,875,855 bytes |
 
 下載 ZIP → 解壓到任意資料夾 → 雙擊 `WorkTaskTracker.exe`。任務資料與程式資料夾分開，換版或搬移程式都不影響任務資料。
 
 ### 校驗碼（SHA-256）
 
 ```text
-WorkTaskTracker-1.7.2-portable-win-x64.zip
-E19A01931A56D870DC6B156C04D0C1A72EA06DB5E792C800EC6DDB700D5BA3A2
+WorkTaskTracker-1.7.3-portable-win-x64.zip
+75A29B92B449A68B6796310785DB43BEB7DC9D19B9CF991524C541EC2500C835
 
 WorkTaskTracker.exe
-62B3B1CBCD6E90E634095EFAA0595B512850A7E67376F95B15E2BB00D97EA167
+F26EDBF8EE8B9F405624BDE80DFF5CFEA2D2F64BD6BC210B2A50AF015A1EE41C
 
 使用手冊.html
-92A0C3AA27F646869BA81854D0AFB6C43CE29B849956436422A70B254B114BF4
+7E19B27E0FF3E3A64F4D65EDDFF1D2160FDFDD594B7A02FCC281F6FA8C317DC2
 ```
+
+### 1.7.3 重點
+
+- **更新檢查改為自建站優先**：先讀官方網站 `quietvalley.website/wtt/version.json`（大陸連線幾十毫秒），不通才依序退到 jsDelivr 鏡像與 GitHub 原始檔；自訂來源不會被追加別人的端點。三個來源都不通時最多等約 15 秒就回報失敗。
+- **下載不再「看到新版卻下載不了」**：清單新增 `downloadUrlFallback`，主下載頁（GitHub）連不上時自動改開官網的同一份 zip；只有真的有新版本時才會多發一次 4 秒的連線探測。
+- 不再上架任何應用商店；官網只放 400 bytes 的版本清單與備份檔，70 MB 的便攜包仍由 GitHub Releases 提供。
+- 回歸測試 98 項全過。程式仍然沒有任何使用統計、安裝 ID 或背景上傳：唯一的網路行為是讀取公開版本清單。
 
 ### 1.7.2 重點
 
@@ -64,7 +71,7 @@ WorkTaskTracker.exe
 
 Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一自包含 `WorkTaskTracker.exe`，双击即可使用，不需要安装、不需要管理员权限，也不需要另外安装 .NET Runtime。
 
-- 当前版本：**1.7.2**（文件版本 1.7.2.0）
+- 当前版本：**1.7.3**（文件版本 1.7.3.0）
 - 系统需求：Windows 10 / Windows 11（x64）
 - 数据：单机 `tasks.json`，没有数据库、没有账号系统、不上传任务内容
 
@@ -72,9 +79,16 @@ Windows 桌面待办／任务追踪工具，**只提供免安装版**：单一�
 
 | 文件 | 说明 | 大小 |
 | --- | --- | --- |
-| [WorkTaskTracker-1.7.2-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.2/WorkTaskTracker-1.7.2-portable-win-x64.zip) | **唯一需要下载的文件**。解压后只有 EXE（收款码、使用手册与发布设置都已内嵌）与使用手册，共 2 个文件 | 70,873,379 bytes |
+| [WorkTaskTracker-1.7.3-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.3/WorkTaskTracker-1.7.3-portable-win-x64.zip) | **唯一需要下载的文件**。解压后只有 EXE（收款码、使用手册与发布设置都已内嵌）与使用手册，共 2 个文件 | 70,875,855 bytes |
 
 SHA-256 与繁体中文段落相同。
+
+### 1.7.3 重点
+
+- **更新检查改为自建站优先**：先读官网 `quietvalley.website/wtt/version.json`（大陆连接几十毫秒），不通才依次退到 jsDelivr 镜像与 GitHub 原始文件；自定义来源不会被追加别人的端点。三个来源都不通时最多等约 15 秒就报失败。
+- **下载不再"看到新版却下载不了"**：清单新增 `downloadUrlFallback`，主下载页（GitHub）连不上时自动改开官网的同一份 zip；只有确实有新版本时才多发一次 4 秒的连通探测。
+- 不再上架任何应用商店；官网只放 400 bytes 的版本清单与备份文件，70 MB 的便携包仍由 GitHub Releases 提供。
+- 回归测试 98 项全过。程序仍然没有任何使用统计、安装 ID 或后台上传：唯一的网络行为是读取公开版本清单。
 
 ### 1.7.2 重点
 
@@ -91,7 +105,7 @@ SHA-256 与繁体中文段落相同。
 
 A portable, offline-first Windows desktop task tracker. **Portable only**: a single self-contained `WorkTaskTracker.exe`, no installation, no admin rights and no separate .NET Runtime.
 
-- Current version: **1.7.2** (file version 1.7.2.0)
+- Current version: **1.7.3** (file version 1.7.3.0)
 - Requirements: Windows 10 / 11 x64
 - Data: local `tasks.json`; no database, no account, no task-content upload
 
@@ -99,9 +113,16 @@ A portable, offline-first Windows desktop task tracker. **Portable only**: a sin
 
 | File | Notes | Size |
 | --- | --- | --- |
-| [WorkTaskTracker-1.7.2-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.2/WorkTaskTracker-1.7.2-portable-win-x64.zip) | **The only file you need**. Unzip to get the EXE (payment codes, manual and release settings embedded) and the manual — 2 files total | 70,873,379 bytes |
+| [WorkTaskTracker-1.7.3-portable-win-x64.zip](https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/download/v1.7.3/WorkTaskTracker-1.7.3-portable-win-x64.zip) | **The only file you need**. Unzip to get the EXE (payment codes, manual and release settings embedded) and the manual — 2 files total | 70,875,855 bytes |
 
 SHA-256 values are the same as in the Traditional Chinese section.
+
+### What's new in 1.7.3
+
+- **The update check now prefers the self-hosted feed**: it reads `quietvalley.website/wtt/version.json` first (tens of milliseconds in mainland China), then falls back to the jsDelivr mirror and finally to the GitHub raw file. A custom feed never gets someone else's endpoints appended, and a fully blocked network gives up after about 15 s.
+- **"New version found, but the download won't open" is fixed**: the manifest gained `downloadUrlFallback`; when the primary GitHub page is unreachable the app opens the hosted copy of the same zip. The extra 4 s reachability probe only runs when a newer version actually exists.
+- No app store listing: the site hosts only a 400-byte manifest and a backup zip, while the 70 MB portable package stays on GitHub Releases.
+- All 98 regression tests pass. The app still has no usage reporting, install ID or background upload — the only network call is reading the public version manifest.
 
 ### What's new in 1.7.2
 

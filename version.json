@@ -1,5 +1,6 @@
 {
-  "version": "1.7.2",
+  "version": "1.7.3",
   "downloadUrl": "https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest",
-  "notes": "1.7.2：狀態篩選徹底修好——滑鼠只是停在下拉選項上（含背景每 15 秒自動刷新期間）不會再自己換篩選，只有真的點下去或按 Enter 才套用，Esc／點別處關閉維持原篩選。"
+  "downloadUrlFallback": "https://quietvalley.website/wtt/WorkTaskTracker-latest.zip",
+  "notes": "1.7.3：更新檢查改為自建站優先（大陸更快），不通時自動改用 GitHub 鏡像與原始檔；GitHub 下載頁連不上時自動改開官網備份檔，不會再看到新版卻下載不了。"
 }
