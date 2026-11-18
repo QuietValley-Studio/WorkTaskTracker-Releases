@@ -1,6 +1,6 @@
 {
-  "version": "1.7.3",
+  "version": "1.0.0",
   "downloadUrl": "https://github.com/QuietValley-Studio/WorkTaskTracker-Releases/releases/latest",
   "downloadUrlFallback": "https://quietvalley.website/wtt/WorkTaskTracker-latest.zip",
-  "notes": "1.7.3：更新檢查改為自建站優先（大陸更快），不通時自動改用 GitHub 鏡像與原始檔；GitHub 下載頁連不上時自動改開官網備份檔，不會再看到新版卻下載不了。"
+  "notes": "工作任務追蹤首個公開版本：本機任務管理、期限提醒、四色儀表板、Excel 批量導入、自動備份與三語介面。"
 }
